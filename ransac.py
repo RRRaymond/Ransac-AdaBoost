@@ -45,8 +45,8 @@ class Ransac(object):
         self.__weight = np.dot(np.dot(np.mat(np.dot(x_data.T, x_data)).I,x_data.T),y_data)
         self.__inlier = inlier
 
-    def getWeight(self):
+    def getweight(self):
         return self.__weight
 
-    def getInlier(self):
+    def getinlier(self):
         return self.__inlier

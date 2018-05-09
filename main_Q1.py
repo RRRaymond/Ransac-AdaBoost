@@ -2,6 +2,9 @@
 @author: raymondchen
 @date: 2018/5/7
 Description:
+    This is the main of the ransac algorithm.
+    It contains the raw data as input of the ransac.
+    It will display the origin data and the line fitting with the ransac algorithm
 """
 
 import numpy as np
@@ -51,7 +54,7 @@ def display():
 if __name__ == "__main__":
     m_ransac = Ransac(data, threshold_t=1, threshold_T=10, N=20)
     m_ransac.train()
-    weight = m_ransac.getWeight()
-    inlier = m_ransac.getInlier()
+    weight = m_ransac.getweight()
+    inlier = m_ransac.getinlier()
     display()
 
